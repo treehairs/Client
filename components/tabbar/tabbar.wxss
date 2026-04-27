@@ -1,0 +1,24 @@
+/* components/tabbar/tabbar.wxss */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item .icon{
+  width: 47rpx;
+  height: 47rpx;
+}
+.mid .icon {
+  height: 60rpx;
+  width: 60rpx;
+  background: #0A60E2;
+  padding: 20rpx;
+  border-radius: 50%;
+  border: 8rpx solid #fff;
+  box-shadow: 0rpx 10rpx 10rpx #ccc;
+  position: relative;
+  bottom: 45rpx;
+}
+.van-tabbar{
+  border-radius: 40rpx;
+}

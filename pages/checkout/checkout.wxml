@@ -1,0 +1,13 @@
+<!--pages/checkout/checkout.wxml-->
+<view>
+  <text>订单总价：{{ totalCost }}</text>
+</view>
+<view>
+  <text>可使用优惠券：</text>
+  <view>
+    <coupon wx:for="{{ coupons }}" wx:key="id" coupon="{{ item }}" bind:useCoupon="onUseCouponFromChild" isSelected="{{ selectedCouponIndex === item.id }}" bind:couponselect="onCouponSelect" isSelected="{{ item === selectedCoupon }}"></coupon>
+  </view>
+</view>
+<view>
+  使用后商品总价：{{ totalCost - discount < 0 ? 0 : totalCost - discount }}
+</view>

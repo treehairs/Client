@@ -1,0 +1,49 @@
+<!--pages/order-info/order-info.wxml-->
+<view class="order-info-container">
+  <view class="header">
+    <text class="order-id">订单 {{ data.order.order_id }}</text>
+    <text class="status">{{ data.order.order_status }}</text>
+  </view>
+  <view class="goods-info-i" wx:for="{{ data.item }}" wx:key="id">
+    <view class="image-box">
+      <image src="{{ url + item.variant_image }}" mode="widthFix" class="goods-image" />
+    </view>
+    <view class="goods-name-box">
+      <text class="product-name">{{ item.product_name }}</text>
+      <text class="variant-name">{{ item.variant_name }} {{ item.style }}+{{ item.specs }}</text>
+    </view>
+    <view class="goods-price-box">
+      <view class="total-price">
+        <text class="symbol">￥</text>
+        <text class="price">{{ item.total_price }}</text>
+      </view>
+      <view class="quantity">x{{ item.quantity }}</view>
+    </view>
+  </view>
+  <view class="total-amount-box text">
+    <text class="left">实付款</text>
+    <view class="total-amount">
+      <text class="symbol">￥</text>
+      <text class="price">{{ data.order.total_amount }}</text>
+    </view>
+  </view>
+  <view class="goods-info-t">
+    <view class="recipient-name text">
+      <text class="left">收件人</text>
+      <text>{{ data.order.recipient_name }}</text>
+    </view>
+    <view class="address text">
+      <text class="left">收件地址</text>
+      <text>{{ data.order.address }}</text>
+    </view>
+    <view class="recipient-name text">
+      <text class="left">手机号码</text>
+      <text>{{ data.order.tel }}</text>
+    </view>
+    <view class="recipient-name text">
+      <text class="left">创建日期</text>
+      <text>{{ data.order.created_at }}</text>
+    </view>
+  </view>
+
+</view>

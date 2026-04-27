@@ -1,0 +1,5 @@
+/* pages/checkout/checkout.wxss */
+page{
+  background: #f5f5f5;
+}
+

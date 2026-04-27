@@ -1,0 +1,201 @@
+/* pages/product/product.wxss */
+.info-container {
+  width: 100vw;
+  padding-bottom: 60px;
+}
+
+.product-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.product-image .image {
+  width: 100%;
+}
+
+.product-text {
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+.product-price {
+  font-size: 30rpx;
+  color: #dd0808;
+  font-weight: bold;
+  margin: 10rpx 0;
+}
+
+.product-price .price {
+  font-size: 50rpx;
+  margin: 0 10rpx 0 0;
+}
+
+.product-name {
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.description {
+  font-size: 25rpx;
+  color: #aaa;
+}
+
+.details {
+  width: 95%;
+  margin: 20rpx auto;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 15rpx;
+}
+
+.details .details-item {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  box-sizing: border-box;
+}
+
+.details .details-item:not(:last-child) {
+  border-bottom: 1rpx solid rgb(245, 245, 245);
+}
+
+.details .details-item .left {
+  width: 90rpx;
+  color: #aaa;
+}
+
+.variant-container {
+  width: 100%;
+  padding: 40rpx 30rpx;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.variant-container .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.variant-container .header .promo-image {
+  width: 80rpx;
+}
+
+.variant-container .header .variant-price {
+  margin-left: 25rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: red;
+}
+
+.variant-container .header .variant-price .symbol{
+  font-size: 30rpx;
+}
+
+.variant-container .address {
+  width: 100%;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 30rpx 0;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.variant-container .address .address-icon {
+  width: 70rpx;
+  display: flex;
+  justify-content: center;
+  color: #0841dd;
+}
+
+.variant-container .address .address-info {
+  font-size: 28rpx;
+}
+
+.variant-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30rpx 0;
+  grid-gap: 30rpx;
+}
+
+/* components/VariantCard/VariantCard.wxss */
+.variant-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20rpx;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+
+.variant-image {
+  width: 90%;
+  height: 90%;
+}
+
+.variant-name,
+.variant-options {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "黑体";
+}
+
+.variant-name {
+  font-weight: bold;
+  height: 55rpx;
+  padding-top: 10rpx;
+}
+
+.variant-options {
+  font-size: 24rpx;
+  height: 50rpx;
+  color: #aaa;
+}
+
+.checked {
+  /* border: 2px solid #0841dd; */
+  box-shadow: 0 0 10rpx #250550;
+  transition: .5s;
+}
+
+.quantity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding: 10rpx 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+}
+
+.bottom{
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20rpx;
+}
+.bottom .bottom-header{
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.bottom .btn{
+  border-radius: 50rpx;
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,12 @@
+<!--components/coupon/coupon.wxml-->
+<view class="quan">
+  <view class="quanInfo">
+    <text class="couponMpoey">￥{{ coupon.discount_amount }} <text class="couponMpoeyInfo">满{{ coupon.minimum_amount }}减{{ coupon.discount_amount }}</text></text>
+    <text class="couponName">店铺优惠劵</text>
+    <text class="couponTime">截止至{{ coupon.expiration_date }}</text>
+  </view>
+  <view class="receiveBtn" bindtap="onUseCoupon" data-discount="{{ coupon.discount_amount }}">
+    <view class="receive" wx:if="{{ !isUse }}" animation="{{ buttonAnimation }}">使用</view>
+    <van-icon name="checked" wx:else color="#5FC484" size="70rpx" custom-style="padding:0 24.5px" />
+  </view>
+</view>

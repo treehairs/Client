@@ -1,0 +1,20 @@
+/* pages/animation-demo/animation-demo.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  background-color: #007AFF;
+  color: #FFF;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

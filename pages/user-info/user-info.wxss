@@ -1,0 +1,72 @@
+/* pages/account/account.wxss */
+page {
+  background: #fff;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+  height: 250rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo image {
+  width: 200rpx;
+  border-radius: 20rpx;
+  border: 1rpx solid #eee;
+}
+
+.userInfo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userInfo view {
+  width: 90%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+}
+
+.userInfo view text {
+  width: 170rpx;
+  /* color: #ccc; */
+  font-weight: bold;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+
+.userInfo view input {
+  height: 100%;
+}
+
+.update {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.err{
+  width: 100%;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: red;
+}
+.tips{
+  width: 100%;
+  height: 70rpx;
+  text-align: center;
+  line-height: 70rpx;
+  color: #aaa;
+  font-size: 30rpx;
+  font-family: "黑体";
+}

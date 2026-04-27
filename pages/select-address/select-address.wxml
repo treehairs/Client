@@ -1,0 +1,2 @@
+<!--pages/select-address/select-address.wxml-->
+<Address wx:for="{{ addresses }}" wx:key="address_id" address="{{ item }}" bind:click="onClick"></Address>

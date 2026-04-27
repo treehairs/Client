@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<tabbar></tabbar>
+<van-search value="{{ value }}" placeholder="请输入关键词"/>
+<view class="product-list">
+  <view class="title">热销商品</view>
+  <ProductCard wx:for="{{ products }}" wx:key="product_id" product="{{ item }}" min_price="{{ min_price }}" bind:tap="onClick" data-id="{{ item.product_id }}"></ProductCard>
+</view>

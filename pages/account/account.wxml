@@ -1,0 +1,30 @@
+<!--pages/account/account.wxml-->
+
+<view class="logo">
+  <!-- <image src="../../images/logo.png" mode="widthFix" /> -->
+</view>
+<form bindsubmit="login">
+  <view class="userInfo">
+    <view class="username">
+      <text>账号</text>
+      <input type="text" name="username" placeholder="请输入账号" />
+    </view>
+    <view class="password">
+      <text>密码</text>
+      <input type="password" name="password" placeholder="请输入密码" />
+    </view>
+  </view>
+  <view class="login">
+    <button type="primary" form-type="submit">
+      <van-loading color="#fff" size="45rpx" wx:if="{{ isLoading }}"/>
+      <text wx:else>登录</text>
+    </button>
+  </view>
+</form>
+<view class="err">
+  <text>{{err}}</text>
+</view>
+<view class="tips">
+  <text style="font-weight: bold;">Tips：</text>
+  <text>未注册的账号将会自动注册。</text>
+</view>

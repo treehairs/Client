@@ -1,0 +1,16 @@
+/* pages/shopcart/shopcart.wxss */
+.card-list{
+  background: #fff;
+  margin: 0 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 1px 5px #eee;
+  padding: 0 20rpx;
+  border-radius: 20rpx;
+}
+
+.van-checkbox__label--right{
+  width: 100%;
+}
+.null{
+  height: 150rpx;
+}

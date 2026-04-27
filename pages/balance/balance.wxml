@@ -1,0 +1,20 @@
+<!--pages/orders/orders.wxml-->
+<view class="address" bind:tap="onClickAddress">
+  <view class="address-icon">
+    <van-icon name="location" />
+  </view>
+  <view class="address-info">
+    <view class="address-info">
+      <text class="name">{{ address.recipient_name }} </text>
+      <text class="street-address">{{ address.street_address }} </text>
+      <text class="telephone">{{ address.telephone }}</text>
+    </view>
+  </view>
+</view>
+<view class="card-box">
+  <view class="title">购物清单</view>
+  <view class="card-item" wx:for="{{ goods }}" wx:key="cart_id">
+    <van-card class="card_item" num="{{ item.quantity }}" price="{{ item.quantity*item.price }}" desc="{{ item.variant_name }} {{ item.style }}+{{ item.specs }}" title="{{ item.product_name }}" thumb="{{ url + item.variant_image }}" />
+  </view>
+</view>
+<van-submit-bar price="{{ total_price }}" button-text="提交订单" bind:submit="onSubmit" class="" />

@@ -1,0 +1,7 @@
+<!--pages/animation-demo/animation-demo.wxml-->
+<view class="container">
+  <view class="btn" bindtap="startAnimation" animation="{{ buttonAnimation }}">
+    点我动画
+  </view>
+</view>
+

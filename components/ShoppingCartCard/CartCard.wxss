@@ -1,0 +1,16 @@
+/* components/ShoppingCartCard/CartCard.wxss */
+.van-swipe-cell__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+  width: 130rpx;
+  height: 100%;
+  color: #fff;
+
+}
+
+.shopping-cart-card {
+  border-radius: 20rpx;
+  overflow: hidden;
+}

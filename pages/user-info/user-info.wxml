@@ -1,0 +1,34 @@
+<!--pages/account/account.wxml-->
+
+<view class="logo">
+  <!-- <van-uploader file-list="{{ fileList }}" max-count="1" bind:after-read="afterRead" preview-size="150px" upload-icon="photo-o" bind:after-read="readFile"/> -->
+</view>
+<form bindsubmit="update">
+  <view class="userInfo">
+    <view class="username">
+      <text>账号</text>
+      <input type="text" name="username" placeholder="请输入账号" value="{{ userInfo.username }}" disabled/>
+    </view>
+    <view class="username">
+      <text>昵称</text>
+      <input type="text" name="nickname" placeholder="请输入昵称" value="{{ userInfo.nickname }}" />
+    </view>
+    <view class="password">
+      <text>密码</text>
+      <input type="password" name="password" placeholder="请输入密码" value="{{ userInfo.password }}" />
+    </view>
+  </view>
+  <view class="update">
+    <button type="primary" form-type="submit">
+      <van-loading color="#fff" size="45rpx" wx:if="{{ isLoading }}" />
+      <text wx:else>修改</text>
+    </button>
+  </view>
+</form>
+<view class="err">
+  <text>{{err}}</text>
+</view>
+<view class="tips">
+  <text style="font-weight: bold;">Tips：</text>
+  <text>账号记录具有唯一性，不支持修改。</text>
+</view>

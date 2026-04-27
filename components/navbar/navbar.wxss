@@ -1,0 +1,10 @@
+/* components/navbar/navbar.wxss */
+.navbar-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon{
+  width: 40rpx;
+  height: 40rpx;
+}

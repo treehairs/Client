@@ -1,0 +1,28 @@
+// components/VariantCard/VariantCard.js
+const app = getApp()
+Component({
+
+  /**
+   * 组件的属性列表
+   */
+  properties: {
+    variant: {
+      type: Object,
+      value: {}
+    }
+  },
+
+  /**
+   * 组件的初始数据
+   */
+  data: {
+    url: app.globalData.url
+  },
+
+  /**
+   * 组件的方法列表
+   */
+  methods: {
+
+  }
+})

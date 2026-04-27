@@ -1,0 +1,9 @@
+<!--components/navbar/navbar.wxml-->
+<van-nav-bar title="{{ title }}" safe-area-inset-top="false" custom-style="padding:0;">
+  <van-icon slot="left" class="navbar-item">
+    <image src="/images/icons/menu.png" mode="widthFix" class="icon" />
+  </van-icon>
+  <van-icon slot="right" class="navbar-item">
+    <image src="/images/icons/search.png" mode="widthFix" class="icon" />
+  </van-icon>
+</van-nav-bar>

@@ -1,0 +1,17 @@
+<!--components/ProductCard/ProductCard.wxml-->
+<view class="product-card">
+  <view class="image-container">
+    <image class="product-image" src="{{ url + product.promo_image }}" mode="widthFix" />
+    <!-- <van-skeleton avatar /> -->
+  </view>
+  <!-- <van-skeleton row="3" /> -->
+  <text class="product-text product-title">
+    <text>{{ product.product_name }}</text>
+  </text>
+  <text class="product-text product-price">
+    <text class="symbol">￥</text>
+    <text class="price">{{ product.min_price }}</text>
+    <text class="tip">起</text>
+  </text>
+  <text class="product-text product-rating">⭐⭐⭐⭐⭐</text>
+</view>

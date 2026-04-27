@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/account/account",
+    "pages/test/test",
+    "pages/user/user",
+    "pages/shopcart/shopcart",
+    "pages/orders/orders",
+    "pages/balance/balance",
+    "pages/checkout/checkout",
+    "pages/animation-demo/animation-demo",
+    "pages/product/product",
+    "pages/address/address",
+    "pages/select-address/select-address",
+    "pages/orders/order",
+    "pages/order-info/order-info",
+    "pages/user-info/user-info",
+    "pages/customer-service/customer-service"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "coupon": "/components/coupon/coupon",
+    "tabbar": "/components/tabbar/tabbar",
+    "navbar": "/components/navbar/navbar",
+    "ProductCard": "/components/ProductCard/ProductCard",
+    "VariantCard": "/components/VariantCard/VariantCard",
+    "van-search": "@vant/weapp/search/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "CartCard": "/components/ShoppingCartCard/CartCard",
+    "Address": "/components/AddressCard/Address",
+    "OrderCard": "/components/OrderCard/OrderCard",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/home/home"
+      },
+      {
+        "pagePath": "pages/user/user"
+      }
+    ]
+  }
+}

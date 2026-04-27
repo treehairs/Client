@@ -1,0 +1,98 @@
+/* pages/order-info/order-info.wxss */
+.order-info-container {
+  width: 96%;
+  margin: 20rpx auto;
+  background: #fff;
+  border-radius: 20rpx;
+  padding-bottom: 30rpx;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  font-size: 28rpx;
+}
+
+.order-id {
+  font-weight: bold;
+}
+
+.status {
+  font-size: 24rpx;
+  color: rgb(136, 0, 0);
+}
+
+.goods-info-i {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.image-box {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 0 20rpx;
+}
+
+.goods-image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods-name-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  font-size: 26rpx;
+}
+
+.goods-price-box {
+  margin-left: auto;
+  height: 100%;
+  font-size: 26rpx;
+  padding-right: 20rpx;
+}
+
+.total-price{
+  font-weight: bold;
+}
+.symbol{
+  font-size: 20rpx;
+}
+.quantity{
+  text-align: right;
+  font-size: 22rpx;
+  margin-top: 5rpx;
+  color: #aaa;
+}
+.text{
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #aaa;
+  margin: 0 auto;
+  margin-bottom: 10rpx;
+}
+.left{
+  color: #000;
+}
+.total-amount-box{
+  padding: 0;
+  padding-top: 10rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #eee;
+}
+.total-amount{
+  color: rgb(207, 0, 0);
+  font-weight: bold;
+}
+.total-amount .price{
+  font-size: 30rpx;
+}

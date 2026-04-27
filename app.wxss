@@ -1,0 +1,19 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+page {
+  background: #f5f7ff;
+}
+
+.van-tabbar {
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+}

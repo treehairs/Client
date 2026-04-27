@@ -1,0 +1,108 @@
+/* components/OrderCard/OrderCard.wxss */
+.order-card{
+  width: 92%;
+  background: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+.header{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  padding: 0 30rpx;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.order-id{
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.order-status{
+  font-size: 22rpx;
+  color: #770000;
+}
+.body{
+  width: 95%;
+  height: 180rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.goods{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.goods-list{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.image-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods-image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+  margin-right:20rpx;
+}
+.goods-info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 28rpx;
+  font-family: "微软雅黑";
+}
+.goods-name{
+  margin-bottom: 5rpx;
+}
+.order-price{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background: #fff;
+  right: 0;
+  padding: 0 10rpx;
+}
+.total-price{
+  color: #db0202;
+  font-size: 20rpx;
+  font-weight: bold;
+}
+.price{
+  font-size: 34rpx;
+}
+.quantity{
+  font-size: 26rpx;
+  color: #5f5f5f;
+  margin-top: 5rpx;
+}
+.footer{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20rpx;
+  padding-bottom: 10rpx;
+  box-sizing: border-box;
+}
+.btn{
+  margin-left: 20rpx;
+}

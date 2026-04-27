@@ -1,0 +1,11 @@
+<!--pages/test/test.wxml-->
+
+<view>
+  <text></text>
+  <van-cell-group>
+    <van-field label="订单价格：" model:value="{{ price }}" placeholder="请输入订单价格" bind:change="onChange"></van-field>
+  </van-cell-group>
+  可用优惠券：{{ count }}张
+</view>
+
+<van-submit-bar price="{{ 3500 }}" button-text="提交订单" bind:submit="onSubmit" />

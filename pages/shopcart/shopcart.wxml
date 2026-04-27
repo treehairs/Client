@@ -1,0 +1,7 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view wx:for="{{ cards }}" wx:key="cart_id" class="card-list">
+  <CartCard card="{{ item }}" bind:change="onChange" bind:delete="getData"></CartCard>
+</view>
+<view class="null"></view>
+<van-submit-bar price="{{ total_price }}" disabled="{{ !selected_data.length }}" button-text="去结算" bind:submit="onSubmit" class="" />
+<van-dialog id="van-dialog" />

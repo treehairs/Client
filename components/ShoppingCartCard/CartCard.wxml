@@ -1,0 +1,7 @@
+<!--components/ShoppingCartCard/CartCard.wxml-->
+<van-swipe-cell right-width="{{ 65 }}">
+  <van-checkbox value="{{ checked }}" bind:change="onChange">
+    <van-card class="card_item" num="{{ card.quantity }}" price="{{ card.quantity*card.price }}" desc="{{ card.variant_name }} {{ card.style }}+{{ card.specs }}" title="{{ card.product_name }}" thumb="{{ url + card.variant_image }}" class="shopping-cart-card"/>
+  </van-checkbox>
+  <view slot="right" class="van-swipe-cell__right" bind:tap="onClick" data-id="{{ card.cart_id }}">删除</view>
+</van-swipe-cell>

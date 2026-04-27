@@ -1,0 +1,36 @@
+/* pages/orders/orders.wxss */
+.address {
+  width: 100%;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin: 0;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.address .address-icon {
+  width: 70rpx;
+  display: flex;
+  justify-content: center;
+  color: #0841dd;
+}
+
+.address .address-info {
+  font-size: 28rpx;
+}
+.card-box{
+  margin: 25rpx 0;
+  background: #fff;
+  padding: 20rpx 0;
+}
+.card-item{
+  box-shadow: 0 0 5rpx #eee;
+  margin-bottom: 15rpx;
+}
+.title{
+  font-size: 30rpx;
+  margin-bottom: 15rpx;
+  padding: 0 20rpx;
+}

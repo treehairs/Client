@@ -1,0 +1,6 @@
+<!--components/VariantCard/VariantCard.wxml-->
+<view class="variant-box">
+  <image src="{{ url + variant.variant_image }}" mode="widthFix" class="variant-image"/>
+  <text class="variant-name">{{ variant.variant_name }}</text>
+  <text class="variant-options">{{ variant.style }}+{{ variant.specs }}</text>
+</view>

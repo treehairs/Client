@@ -1,0 +1,12 @@
+<!--components/AddressCard/Address.wxml-->
+<view class="address-card" bind:tap="onClick">
+  <view class="user-info">
+    <text class="name">{{ address.recipient_name }}</text>
+    <text class="telephone">{{ address.telephone }}</text>
+  </view>
+  <view class="address">{{ address.city + address.street_address }}</view>
+  <view class="edit" wx:if="{{ btn_show }}">
+    <van-icon name="edit" catch:tap="onEdit" />
+    <van-icon name="delete-o" catch:tap="onDelete" />
+  </view>
+</view>

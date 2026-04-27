@@ -1,0 +1,25 @@
+/* pages/address/address.wxss */
+.add-icon{
+  position: fixed;
+  bottom: 50rpx;
+  right: 50rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  background: rgb(103, 86, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35rpx;
+  color: #fff;
+}
+.add-address-box{
+  height: 520rpx;
+  padding: 30rpx 10rpx;
+}
+.submit-btn{
+  width: 97%;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40rpx;
+}

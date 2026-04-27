@@ -1,0 +1,22 @@
+<!--components/tabbar/tabbar.wxml-->
+<van-tabbar active="{{ active }}" active-color="#07c160" inactive-color="#000" bind:change="onChange" class="tabbar" style="border-radius: 40rpx;">
+  <van-tabbar-item url="/pages/home/home" link-type="switchTab" class="item">
+    <image slot="icon" src="/images/icons/home.png" mode="widthFix" class="icon" />
+    <image slot="icon-active" src="/images/icons/home-active.png" mode="widthFix" class="icon" />
+  </van-tabbar-item>
+  <!-- <van-tabbar-item url="/pages/favorite/favorite" link-type="switchTab" class="item">
+    <image slot="icon" src="/images/icons/favorite.png" mode="widthFix" class="icon" />
+    <image slot="icon-active" src="/images/icons/favorite-active.png" mode="widthFix" class="icon" />
+  </van-tabbar-item> -->
+  <van-tabbar-item url="/pages/shopcart/shopcart" link-type="redirectTo" class="item mid">
+    <image src="/images/icons/shopcart.png" mode="widthFix" class="icon"/>
+  </van-tabbar-item>
+  <!-- <van-tabbar-item url="/pages/ticket/ticket" link-type="switchTab" class="item">
+    <image slot="icon" src="/images/icons/ticket.png" mode="widthFix" class="icon" />
+    <image slot="icon-active" src="/images/icons/ticket-active.png" mode="widthFix" class="icon" />
+  </van-tabbar-item> -->
+  <van-tabbar-item url="/pages/user/user" link-type="switchTab" class="item">
+    <image slot="icon" src="/images/icons/user.png" mode="widthFix" class="icon" />
+    <image slot="icon-active" src="/images/icons/user-active.png" mode="widthFix" class="icon" />
+  </van-tabbar-item>
+</van-tabbar>

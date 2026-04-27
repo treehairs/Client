@@ -1,0 +1,27 @@
+<!--pages/user/user.wxml-->
+<tabbar></tabbar>
+<!--我的-->
+<view class="user">
+    <view style="float:left;" class="avatar">{{user.id}}</view>
+    <view style="float:left;" class="info">
+        <view>{{user.nickname}}</view>
+        <view style="color: #c1c1c1">账号：{{user.username}}</view>
+    </view>
+</view>
+<view class="list">
+    <view class="item" bind:tap="toOrder">
+        <view style="float:left;" class="t">我的订单</view>
+    </view>
+    <view class="item" bind:tap="toAddress">
+        <view style="float:left;" class="t">收货地址</view>
+    </view>
+    <view class="item" bindtap="toInfo">
+        <view style="float:left;" class="t">个人信息</view>
+    </view>
+    <view class="item" bindtap="openThis" data-page="/pages/user/about">
+        <view style="float:left;" class="t">关于我们</view>
+    </view>
+    <view class="item" bindtap="signOut">
+        <view style="float:left;" class="t">退出登录</view>
+    </view>
+</view>

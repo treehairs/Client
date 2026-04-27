@@ -1,0 +1,32 @@
+<!--components/OrderCard/OrderCard.wxml-->
+<view class="order-card" bind:tap="onClick">
+  <view class="header">
+    <text class="order-id">订单 {{ data.order.order_id }}</text>
+    <text class="order-status">{{ data.order.order_status }}</text>
+  </view>
+  <view class="body">
+    <view class="goods" wx:if="{{ data.item.length <= 1 }}">
+      <view class="image-box">
+        <image src="{{ url + data.item[0].variant_image }}" mode="widthFix" class="goods-image" />
+      </view>
+      <view class="goods-info">
+        <text class="goods-name">{{ data.item[0].product_name }}</text>
+        <text class="goods-options">{{ data.item[0].variant_name }} {{ data.item[0].style }}+{{ data.item[0].specs }}</text>
+      </view>
+    </view>
+    <view class="goods-list" wx:else>
+      <image wx:for="{{ data.item }}" wx:key="id" src="{{ url + item.variant_image }}" mode="widthFix" class="goods-image" />
+    </view>
+    <view class="order-price">
+      <view class="total-price">
+        <text class="symbol">￥</text>
+        <text class="price">{{ data.order.total_amount }}</text>
+      </view>
+      <view class="quantity">共{{ data.item.length }}件</view>
+    </view>
+  </view>
+  <view class="footer">
+    <van-button class="btn" plain round size="small" catch:tap="onDelete">删除订单</van-button>
+    <van-button class="btn" plain round type="danger" size="small" wx:if="{{ data.order.order_status!=='已完成' }}" catch:tap="done_order">完成订单</van-button>
+  </view>
+</view>

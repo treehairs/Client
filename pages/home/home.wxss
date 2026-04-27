@@ -1,0 +1,32 @@
+/* pages/home/home.wxss */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 100rpx;
+}
+
+.title {
+  width: 100vw;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  line-height: 100rpx;
+  grid-column-start: span 2;
+  justify-self: start;
+  margin-left: 10rpx;
+  padding-left: 25rpx;
+  position: sticky;
+  top: 0;
+  background: #f5f7ffef;
+}
+
+.title::before {
+  content: "";
+  width: 10rpx;
+  height: 50rpx;
+  background: #12448f;
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+}

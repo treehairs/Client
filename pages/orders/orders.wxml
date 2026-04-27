@@ -1,0 +1,2 @@
+<!--pages/orders/orders.wxml-->
+<OrderCard wx:for="{{ orders }}" wx:key="id" data="{{ item }}" bind:update="getData"></OrderCard>

@@ -1,0 +1,38 @@
+/* components/AddressCard/Address.wxss */
+.address-card{
+  width: 100%;
+  height: 150rpx;
+  background: #fff;
+  padding: 0 40rpx;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+  overflow: hidden;
+}
+.user-info{
+  font-size: 30rpx;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  margin-bottom: 8rpx;
+}
+.name{
+  margin-right: 20rpx;
+}
+.address{
+  font-size: 28rpx;
+  color: rgb(65, 65, 65);
+}
+.edit{
+  position: absolute;
+  right: 120rpx;
+  font-size: 40rpx;
+  color: #bbb;
+  background: #fff;
+  width: 100rpx;
+  display: flex;
+  justify-content: space-between;
+
+}
